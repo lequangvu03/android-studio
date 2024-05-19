@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showDeleteConfirmationDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setMessage("Bạn có chắc chắn muốn xóa không?" + selectedId);
+        builder.setMessage("Bạn có chắc chắn muốn xóa không? " + selectedHoaDonTaxi.getId());
         builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
 

@@ -86,6 +86,7 @@ public class TaxiDatabase extends SQLiteOpenHelper {
                 HoaDonTaxi h = new HoaDonTaxi(cursor.getString(1),
                         cursor.getDouble(2), cursor.getInt(3),
                         cursor.getInt(4));
+                h.setId(cursor.getInt(0));
                 list.add(h);
             }
         }
