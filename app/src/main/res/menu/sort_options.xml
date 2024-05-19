@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Sắp xếp theo số xe" android:id="@+id/sort_by_plate_number" />
+    <item android:title="Sắp xếp theo tổng tiền" android:id="@+id/sort_by_total_price" />
+</menu>
