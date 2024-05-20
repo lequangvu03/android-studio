@@ -65,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 selectedId = position;
                 selectedHoaDonTaxi = list.get(position);
+                int count = 0;
+                for (HoaDonTaxi item: list) {
+                    if(item.getTotalPrice() > selectedHoaDonTaxi.getTotalPrice()){
+                        count++;
+                    }
+                }
+                Toast.makeText(MainActivity.this, "Le Quang Vu - " + count, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
